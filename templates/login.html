@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+{% extends "lrbase.html" %}
+
+{% block title %} Cyber Bullying | Login{% endblock %}
+
+{% block content %}
+
+<head>
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    /* Reset any default margin or padding from the body */
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Background and main layout */
+    body {
+      background-color: black;
+      background-image: url("static/img/login_image.jpg");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 6px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .text {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .field {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .field input {
+      width: 100%;
+      padding: 10px;
+      padding-left: 40px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+    }
+
+    .field span {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 18px;
+      color: #aaa;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .sign-up {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .sign-up a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    .sign-up a:hover {
+      text-decoration: underline;
+    }
+
+    #resp_msg {
+      text-align: center;
+      color: red;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="text">Login Form</div>
+    <form action="/login" method="POST">
+      <div class="field">
+        <input type="email" id="email" name="email" placeholder="Email" required />
+        <span class="fas fa-user"></span>
+      </div>
+
+      <div class="field">
+        <input type="password" id="pwd" name="pwd" placeholder="Password" required />
+        <span class="fas fa-lock"></span>
+      </div>
+
+      <button type="submit">Sign In</button>
+
+      <div class="sign-up">
+        Not a member? <a href="/register">Sign up now</a>
+      </div>
+
+      <h4 id="resp_msg">{{ msg }}</h4>
+    </form>
+  </div>
+</body>
+
+{% endblock %}
