@@ -4,6 +4,11 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 import pandas as pd
 import yagmail
+import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # Use Render-assigned port
+    app.run(host="0.0.0.0", port=port, debug=True)
 
 
 app = Flask(__name__)
