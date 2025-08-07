@@ -10,7 +10,6 @@ A robust and scalable web application that leverages hybrid deep learning techni
 - 🔄 Advanced text preprocessing (cleaning, stopword removal, lemmatization)
 - 🔤 Tokenization and sequence padding
 - 🤖 Hybrid LSTM-based model trained on labeled data
-- 🧪 Visual insights from training
 - 🌐 Web interface using Flask
 - 📦 Model persistence using Pickle
 
@@ -25,7 +24,6 @@ A robust and scalable web application that leverages hybrid deep learning techni
 | NLP           | NLTK, re (regex), Pandas     |
 | Web Framework | Flask                        |
 | Model Storage | Pickle                       |
-| Visualization | Matplotlib                   |
 | Deployment    | Localhost via Flask          |
 
 ---
@@ -37,7 +35,6 @@ A robust and scalable web application that leverages hybrid deep learning techni
 - **Output**: Binary label – Hate Speech or Not
 - **Dataset**: Preprocessed labeled text data (not included in repo)
 - **Training**: Conducted in Jupyter Notebook (`hate_speech_detection.ipynb`)
-- **Accuracy & Loss**: Visualized with plots in the notebook
 
 ---
 
@@ -50,3 +47,4 @@ A robust and scalable web application that leverages hybrid deep learning techni
 5. Result is displayed: "Hate Speech" or "Not Hate Speech"
 
 ---
+
