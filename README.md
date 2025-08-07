@@ -1,4 +1,4 @@
-<pre lang="markdown"> ```markdown # 🧠 Hate Speech Detection through Hybrid Deep Learning Technique 
+# 🧠 Hate Speech Detection through Hybrid Deep Learning Technique 
   A robust and scalable web application that leverages hybrid deep learning techniques to detect hate speech in textual data. This project combines NLP preprocessing, LSTM-based deep learning, and Flask deployment to provide real-time predictions through a user-friendly interface. 
   
 --- 
@@ -35,4 +35,4 @@
   2. The text is preprocessed (cleaning, lemmatizing, stopword removal) 
   3. The sequence is tokenized and padded 
   4. The loaded model (`final_model.pkl`) makes a prediction 
-  5. Result is displayed: "Hate Speech" or "Not Hate Speech" ``` </pre>
+  5. Result is displayed: "Hate Speech" or "Not Hate Speech"
